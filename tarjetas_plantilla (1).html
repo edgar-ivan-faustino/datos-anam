@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas Métricas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .titulo-fila {
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .fila-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      align-items: center;
+      padding-right: 12px;
+      min-width: 60px;
+    }
+
+    .fila {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .tarjetas {
+      display: flex;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      flex: 1;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .card-body {
+      padding: 14px 16px 10px;
+    }
+
+    .delta {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .delta.negativo { color: #7B2040; }
+    .delta.positivo { color: #1e5b4f; }
+
+    .row-val {
+      font-size: 13px;
+      color: #333;
+      margin: 2px 0 0;
+    }
+
+    .row-year {
+      font-size: 13px;
+      font-weight: 700;
+      color: #333;
+      margin: 0 0 8px;
+    }
+
+    .card-footer {
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    .card-footer.negativo { background: #7B2040; }
+    .card-footer.positivo { background: #1e5b4f; }
+
+    .encabezados {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 8px;
+      margin-left: 72px;
+    }
+
+    .encabezado-col {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="encabezados">
+    <div class="encabezado-col">MDP</div>
+    <div class="encabezado-col">MDP (2025)</div>
+    <div class="encabezado-col">Sin efecto tipo de cambio; MDP (2025)</div>
+    <div class="encabezado-col">Miles de pesos de importación</div>
+  </div>
+
+  <!-- FILA IVA -->
+  <div class="fila">
+    <div class="fila-label">IVA</div>
+    <div class="tarjetas">
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta negativo">-43,868</p>
+          <p class="row-val">229,968</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">273,836</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer negativo">-16.0%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta negativo">-52,865</p>
+          <p class="row-val">220,020</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">272,884</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer negativo">-19.4%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta negativo">-$25,515.3</p>
+          <p class="row-val">247,369.1</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">272,884.4</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer negativo">-9.4%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta negativo">-$21.4</p>
+          <p class="row-val">109.2</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">130.7</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer negativo">-16.4%</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FILA IEPS -->
+  <div class="fila">
+    <div class="fila-label">IEPS</div>
+    <div class="tarjetas">
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta positivo">+18,606</p>
+          <p class="row-val">60,478</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">41,871</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer positivo">+44.4%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta positivo">+16,164</p>
+          <p class="row-val">57,894</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">41,730</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer positivo">+38.7%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta positivo">+$16,163.8</p>
+          <p class="row-val">57,894.1</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">41,730.3</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer positivo">+38.7%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p class="delta positivo">+$8.8</p>
+          <p class="row-val">28.7</p>
+          <p class="row-year">2026</p>
+          <p class="row-val">20.0</p>
+          <p class="row-year">2025</p>
+        </div>
+        <div class="card-footer positivo">+44.2%</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
